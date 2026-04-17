@@ -1,0 +1,22 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Model;
+    /**
+     * page 77
+     */
+class Books extends Model
+{
+    protected $fillable = [
+        'title', 'author', 'description', 'genre', 
+        'published_year', 'isbn', 'pages', 'language',
+        'publisher', 'price', 'cover_image', 'is_available',
+    ];
+
+    protected $casts =[
+        'is_available' => 'boolean',
+    ];
+}
+
+
